@@ -7,4 +7,172 @@
   --eerie-black: #121619;
   --raisin-black: #222323;
   --nickel: #6c6e70;
+  --font-base: "Roboto", sans-serif;
+  --font-base-title: "Playfair Display", serif;
+  --font-xxl: 70px;
+  --font-xl: 30px;
+  --font-l: 18px;
+  --font-m: 16px;
+  --font-s: 12px;
+}
+
+.yuki h2 {
+  margin: 0;
+}
+
+.yuki p {
+  margin: 0;
+  color: var(--nickel);
+}
+
+.button {
+  border: none;
+  padding: 0.25rem 1rem;
+  color: var(--white);
+}
+
+.primario {
+  background-color: var(--info);
+}
+
+.secundario {
+  background-color: var(-fuzzy-wuzzy);
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 950px) {
+  .profile {
+    justify-content: flex-start;
+  }
+}
+
+.header {
+  background: var(--white);
+  color: var(--eerie-black);
+}
+
+.header button {
+  margin-top: 20px;
+  color: var(--nickel);
+  border: none;
+  opacity: 0.7;
+}
+
+.header button i {
+  font-size: 40px;
+}
+
+.header img {
+  height: 75px;
+}
+
+.header i {
+  color: var(-eerie-black);
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.header li:last-child {
+  opacity: 0.7;
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .header li:last-child {
+    display: list-item;
+  }
+}
+
+.hero {
+  height: 70px;
+  width: 100%;
+  background-image: url("/assets/img/image-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .hero {
+    height: 250px;
+  }
+}
+
+.info-canal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.buttons {
+  display: none;
+}
+
+@media only screen and (min-width: 950px) {
+  .canal {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .info-canal {
+    justify-content: space-between;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.videos {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  border: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 546px) {
+  .videos {
+    justify-content: space-between;
+  }
+  .card {
+    max-width: 250px;
+    height: 305px;
+  }
+  .card .card-body {
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .card img {
+    height: 132px;
+    width: 250px;
+  }
+  .card h3 {
+    font-size: 18px;
+  }
 }

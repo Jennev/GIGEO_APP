@@ -1,0 +1,38 @@
+.header {
+  background: var(--white);
+  color: var(--eerie-black);
+
+  button {
+    margin-top: 20px;
+    color: var(--nickel);
+    border: none;
+    opacity: 0.7;
+    i {
+      font-size: 40px;
+    }
+  }
+
+  img {
+    height: 75px;
+  }
+
+  i {
+    color: var(-eerie-black);
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  li:last-child {
+    opacity: 0.7;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .header {
+    li:last-child {
+      display: list-item;
+    }
+  }
+}
+

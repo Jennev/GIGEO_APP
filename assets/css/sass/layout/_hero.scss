@@ -1,0 +1,20 @@
+.hero {
+  height: 70px;
+  width: 100%;
+  background-image: url("/assets/img/image-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 650px) {
+  .hero {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .hero {
+    height: 250px;
+  }
+}
