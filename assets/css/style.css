@@ -29,6 +29,18 @@ button i {
   font-size: 40px;
 }
 
+.videos-populares h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 546px) {
+  .videos-populares h2 {
+    text-align: center;
+  }
+}
+
 .button {
   border: none;
   padding: 0.25rem 1rem;
@@ -91,7 +103,7 @@ button i {
 .hero {
   height: 70px;
   width: 100%;
-  background-image: url("/assets/img/image-banner.png");
+  background-image: url("assets/img/image-banner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

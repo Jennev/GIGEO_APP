@@ -13,11 +13,10 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 546px) {
+@media only screen and (min-width:546px) {
   .videos {
     justify-content: space-between;
   }
-
   .card {
     max-width: 250px;
     height: 305px;

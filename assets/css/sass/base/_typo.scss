@@ -14,3 +14,13 @@ button {
         font-size: 40px;
     }
 }
+
+.videos-populares h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 10px;
+
+    @media only screen and (max-width:546px) {
+        text-align: center;
+    }
+}
